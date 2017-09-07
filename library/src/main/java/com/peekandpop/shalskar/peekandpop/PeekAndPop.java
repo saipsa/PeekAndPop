@@ -309,7 +309,7 @@ public class PeekAndPop {
         else if (Build.VERSION.SDK_INT < 17 && blurBackground)
             Log.e("PeekAndPop", "Unable to blur background, device version below 17");
 
-        peekAnimationHelper.animatePeek(ANIMATION_PEEK_DURATION);
+        //peekAnimationHelper.animatePeek(ANIMATION_PEEK_DURATION);
 
         if (builder.parentViewGroup != null)
             builder.parentViewGroup.requestDisallowInterceptTouchEvent(true);
