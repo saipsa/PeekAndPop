@@ -310,7 +310,7 @@ public class PeekAndPop {
             Log.e("PeekAndPop", "Unable to blur background, device version below 17");
 
         peekAnimationHelper.animatePeek(ANIMATION_PEEK_DURATION);
-
+        builder.parentViewGroup = (ViewGroup) longClickView.getParent();
         if (builder.parentViewGroup != null)
             builder.parentViewGroup.requestDisallowInterceptTouchEvent(true);
 
